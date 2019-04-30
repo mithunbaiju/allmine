@@ -11,6 +11,7 @@ html, body {
 
 body {
   font-family: 'Nunito', sans-serif;
+  font-size: 16px;
 }
 
 .wrap {
@@ -18,142 +19,53 @@ body {
   margin: 0 auto;
 }
 
-/* header */
-#nav-container > nav > ul {
-  list-style-type: none;
-}
-
-/* NAVIGATION */
-.header-container {
-  background-color: white;
+nav.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   border-bottom: 1px solid #ddd;
 }
 
-#nav-background {
-  top: 0;
-  z-index: 9000;
+nav.site-header .site-logo {
+  max-width: 200px;
+}
+
+nav.site-header .site-logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
-#nav-container {
+nav.site-header ul.head-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-#nav-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  list-style-type: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#nav-logo {
-  color: #444;
+nav.site-header ul.head-navigation a {
+  padding: 2.5px 20px;
+  margin: 0 5px;
+  background-color: #3498db;
+  color: #f5f6fa;
   text-decoration: none;
 }
 
-#nav-logo:hover {
-  color: #666;
-}
-
-.nav-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 700px;
-}
-
-.nav-ul > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav-link {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  color: #444;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.2rem;
-  -webkit-transition: 200ms;
-  transition: 200ms;
-}
-
-.nav-link:hover {
-  background-color: #f1f1f1;
-}
-
-.active-link {
-  background-color: #f1f1f1;
-}
-
-/* END NAVIGATION */
-/* END DESKTOP MENU */
-/* MOBILE MENU */
-@media screen and (max-width: 700px) {
-  #nav-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-  }
-  #nav-menu-button {
-    padding: 1rem;
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  .nav-ul {
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    overflow: auto;
-    direction: rtl;
-    -webkit-transition: max-height 400ms;
-    transition: max-height 400ms;
-    max-height: 80vh;
-  }
-  .hide-ul {
-    max-height: 0;
-  }
-  .nav-link {
-    padding: 1rem 0;
-    font-size: 1.3rem;
-    border-bottom: 1px solid #f4f4f4;
-  }
-}
-
-/* END MOBILE MENU */
-/* DESKTOP MENU */
-@media screen and (min-width: 701px) {
-  #nav-menu-button {
-    display: none;
-  }
-  .nav-link {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    padding: 1rem 1.5rem;
-  }
-}
-
-/* This moves the logo so that it's not touching the left side */
-@media screen and (max-width: 1040px) {
-  #nav-logo {
-    margin-left: 1rem;
-  }
+nav.site-header ul.head-navigation a:hover {
+  background-color: #2980b9;
 }
 /*# sourceMappingURL=main.css.map */
