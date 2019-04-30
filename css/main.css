@@ -60,7 +60,6 @@ nav.site-header .site-logo img {
 
 .head-navigation a {
   padding: 2.5px 20px;
-  margin: 0 5px;
   color: #00a8ff;
   text-decoration: none;
 }
@@ -143,7 +142,6 @@ nav.site-header .site-logo img {
     font-weight: normal;
     height: 15vh;
     padding: 10px 20px;
-    margin: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .head-navigation.isActive a:hover {

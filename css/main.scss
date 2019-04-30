@@ -62,7 +62,6 @@ nav.site-header{
   font-weight: 700;
   a {
     padding: 2.5px 20px;
-    margin: 0 5px;
     color: $button-bg;
     text-decoration: none;
     &:hover{
@@ -131,7 +130,6 @@ nav.site-header{
       font-weight: normal;
       height: 15vh;
       padding: 10px 20px;
-      margin: 0px;
       border-bottom: 1px solid rgba(0, 0,0,0.1);
       &:hover{
         background-color: $button-hover;
