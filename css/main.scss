@@ -17,7 +17,7 @@ $button-hover: rgba(0, 151, 230,1.0);
 $button-text-color: rgba(245, 246, 250,1.0);
 $button-text-hover: rgba(245, 246, 250,1.0);
 
-$wrap-width: 1400px;
+$wrap-width: 1000px;
 
 // body
 
@@ -33,6 +33,11 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
 }
+img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .wrap{
   max-width: $wrap-width;
   margin: 0 auto;
@@ -40,12 +45,15 @@ body {
 
 // Site header
 
+.header-container{
+  border-bottom: 1px solid #ddd;
+}
+
 nav.site-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #ddd;
   .site-logo{
     max-width: 200px;
     img{
@@ -81,6 +89,11 @@ nav.site-header{
   }
 }
 // Site content
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 // Site Footer
 
@@ -128,7 +141,7 @@ nav.site-header{
       background-color: $button-bg;
       color: $button-text-color;
       font-weight: normal;
-      height: 15vh;
+      height: 5.5 vh;
       padding: 10px 20px;
       border-bottom: 1px solid rgba(0, 0,0,0.1);
       &:hover{
