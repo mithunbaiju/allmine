@@ -5,14 +5,15 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
 }
 
@@ -138,8 +139,8 @@ nav.site-header .site-logo img {
 }
 
 .entry-meta span {
-  font-size: .75rem;
-  padding: .1rem .5rem;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
 }
 
 .entry-meta a {
@@ -172,7 +173,7 @@ nav.site-header .site-logo img {
   text-decoration: none;
   border-radius: 3px;
   color: #fff;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .sidebar {
@@ -351,7 +352,8 @@ nav.site-header .site-logo img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .head-navigation.isActive a, .head-navigation.isActive li {
+  .head-navigation.isActive a,
+  .head-navigation.isActive li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
