@@ -112,9 +112,10 @@ nav.site-header{
   max-width: 45%;
   padding: 1rem;
   margin: 1rem;
-  box-shadow: 0px 7px 14px 0px rgba(151,160,204,0.12);
-  background-color: #fff;
   border-radius: 12px;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 15px 45px -9px rgba(0,0,0,0.20);
+  background-color: white;  
   transition: all 0.3s ease;
   &:hover{
     box-shadow: none;
