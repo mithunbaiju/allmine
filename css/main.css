@@ -84,7 +84,7 @@ nav.site-header .site-logo img {
 }
 
 .head-navigation a:hover {
-  color: #2f3640;
+  color: #222222;
 }
 
 .menu-toggle-button {
@@ -229,6 +229,62 @@ nav.site-header .site-logo img {
 .archive-pagination ul li a:hover {
   background: #00a8ff;
   color: #fff;
+}
+
+.footer-ctr {
+  text-align: center;
+  padding: 8rem;
+  background-color: white;
+}
+
+.footer-ctr .cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-main,
+.footer-credits {
+  font-size: 85%;
+  color: rgba(255, 255, 255, 0.678);
+}
+
+.footer-main .widgettitle,
+.footer-credits .widgettitle {
+  margin: 1rem 0 0.75rem;
+}
+
+.footer-main ul,
+.footer-credits ul {
+  list-style-type: none;
+}
+
+.footer-main a,
+.footer-credits a {
+  color: rgba(255, 255, 255, 0.678);
+  text-decoration: none;
+}
+
+.footer-main a:hover,
+.footer-credits a:hover {
+  text-decoration: underline;
+}
+
+.footer-main {
+  background-color: #262626;
+  padding: 2rem 0;
+}
+
+.footer-main .widget-area {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-credits {
+  background-color: #222222;
 }
 
 .footer-main widget,

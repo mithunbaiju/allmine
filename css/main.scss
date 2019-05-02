@@ -1,16 +1,16 @@
 // Variables
 $bodyBg: rgba(189, 195, 199,1.0);
 $headerBg: rgba(44, 58, 71,1.0);
-$footerCtaBg: rgba(52, 73, 94,1.0);
-$footerMainBg: rgba(44, 62, 80,1.0);
-$footerCreditsBg: rgba(47, 54, 64,1.0);
+$footerCtaBg: rgba(255, 255, 255,1.0);
+$footerMainBg: rgb(38, 38, 38);
+$footerCreditsBg: rgb(34, 34, 34);
 $main-link-color: rgba(0, 168, 255,1.0);
 $main-link-hover: rgba(0, 151, 230,1.0);
 $header-a-bg: #3498db;
 $header-a-hover: #2980b9;
 $header-link-color: rgba(220, 221, 225,1.0);
 $header-link-hover: rgba(245, 246, 250,1.0);
-$footer-link-color: rgba(127, 143, 166,1.0);
+$footer-link-color: rgba(255, 255, 255, 0.678);
 $footer-link-hover: rgba(113, 128, 147,1.0);
 $button-bg: rgba(0, 168, 255,1.0);
 $button-hover: rgba(0, 151, 230,1.0);
@@ -197,6 +197,45 @@ nav.site-header{
 }
 
 // Site Footer
+
+.footer-ctr {
+  text-align: center;
+  padding: 8rem;
+  background-color: $footerCtaBg;
+  .cta-title{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+.footer-main,
+.footer-credits{
+  font-size: 85%;
+  color: $footer-link-color;
+  .widgettitle {
+    margin: 1rem 0 0.75rem;
+  }
+  ul{
+    list-style-type: none;
+  }
+  a{
+    color: $footer-link-color;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.footer-main{
+  background-color: $footerMainBg;
+  padding: 2rem 0;
+  .widget-area{
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer-credits{
+  background-color: $footerCreditsBg;
+}
 
 .footer-main widget,
 .footer-ctr .wrap {
